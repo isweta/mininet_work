@@ -1,1 +1,6 @@
 $ sudo mn --topo single,3 --mac --switch ovsk --controller remote
+$ ovs-ofctl show s1
+$ ovs-ofctl dump-flows s1 
+$ sudo mn -c
+Mininet invoked with --switch user
+$ovs-ofctl add-flow s1 in_port=1,actions=output:2

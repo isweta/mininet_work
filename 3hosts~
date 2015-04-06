@@ -1,0 +1,4 @@
+$ sudo mn --topo single,3 --mac --switch ovsk --controller remote
+ $ ovs-ofctl show s1
+ $ ovs-ofctl dump-flows s1 
+ $ sudo mn -c
