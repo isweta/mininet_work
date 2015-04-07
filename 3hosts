@@ -4,3 +4,24 @@ $ ovs-ofctl dump-flows s1
 $ sudo mn -c
 Mininet invoked with --switch user
 $ovs-ofctl add-flow s1 in_port=1,actions=output:2
+$sudo wireshark &
+capture intefaces lo start
+
+set up a filter for OpenFlow control traffic, by typing 'of' in Filter box near the top
+ $ controller ptcp:
+
+of && (of.type != 3) && (of.type != 2)
+iperf
+
+ps -A | grep controller
+$ sudo killall controller
+ $ git clone http://github.com/noxrepo/pox
+go to pox dir and ./pox.py log.level --DEBUG misc.of_tutorial
+tcpdump
+tcpdump -XX -n -i h2-eth0
+connection.send( ... ) 
+out_action = of.ofp_action_output(port = of.OFPP_FLOOD)
+ match = of.ofp_match()
+ match.in_port = 3
+
+
