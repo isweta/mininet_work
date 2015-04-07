@@ -1,0 +1,2 @@
+$ sudo killall controller, $ sudo fuser -k 6633/tcp and $ sudo mn -c 
+sudo mn --topo single,3 --mac --switch ovsk --controller remote

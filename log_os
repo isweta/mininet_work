@@ -1,3 +1,14 @@
 to enable scrollback in xterm
 
+//for udacity course on SDN
 
+Clone the project starter code from Github into the Mininet virtual machine git clone https://github.com/OMS6250/gt-cs6250.git
+
+Update the repository locations by issuing the following command (be sure to copy and paste exactly):
+
+sudo sed -i "s/security.ubuntu.com/old-releases.ubuntu.com/g" /etc/apt/sources.list
+sudo sed -i "s/mirrors.kernel.org/old-releases.ubuntu.com/g" /etc/apt/sources.list
+sudo apt-get update
+From here, issue the following command to get apt-get working again: sudo apt-get update
+
+Install two libraries necessary to run the measurement code sudo apt-get install bwm-ng python-matplotlib.

@@ -1,0 +1,7 @@
+$ sudo killall controller, $ sudo fuser -k 6633/tcp and $ sudo mn -c 
+sudo mn --topo single,3 --mac --switch ovsk --controller remote
+Copy the test firewall policies and your code so that POX can use them $cp firewall-policies.csv pox_firewall.py ~/pox/pox/misc
+Run the controller in a terminal with both MAC learning and firewall applications $pox.py forwarding.l2_learning misc.pox_firewall
+Now run mininet: $sudo mn --topo single,3 --controller remote --mac
+Next, try pinging host 2 from host 1. If h1 cannot ping h2, then the firewall is working correctly: mininet> h1 ping -c1 h2
+Finally, verify that h1 and h3 can still talk to each other. If h1 cannot ping h3, then something is wrong: mininet> h1 ping -c1 h3

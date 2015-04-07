@@ -1,0 +1,3 @@
+ ~/mininet/custom/topo-2sw-2host.py
+$ cp ~/mininet/custom/topo-2sw-2host.py mytopo.py
+ $ sudo mn --custom mytopo.py --topo mytopo --mac
