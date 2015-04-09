@@ -1,0 +1,13 @@
+feature name	description 	type
+duration 	length (number of seconds) of the connection 	continuous
+protocol_type 	type of the protocol, e.g. tcp, udp, etc. 	discrete
+service 	network service on the destination, e.g., http, telnet, etc. 	discrete
+src_bytes 	number of data bytes from source to destination 	continuous
+dst_bytes 	number of data bytes from destination to source 	continuous
+flag 	normal or error status of the connection 	discrete 
+land 	1 if connection is from/to the same host/port; 0 otherwise 	discrete
+wrong_fragment 	number of ``wrong'' fragments 	continuous
+urgent 	number of urgent packets 	continuous
+  
+Table 1: Basic features of individual TCP connections.
+

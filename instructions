@@ -1,0 +1,10 @@
+$ sudo mn --topo single,3 --mac --switch ovsk --controller remote
+./pox.py log.level --DEBUG misc.of_tutorial
+tcpdump -XX -n -i h2-eth0
+
+
+$ ovs-ofctl dump-flows s1 
+
+
+$pox.py forwarding.l2_learning misc.pox_firewall
+$sudo mn --topo single,3 --controller remote --mac
