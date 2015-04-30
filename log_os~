@@ -1,3 +1,42 @@
 to enable scrollback in xterm
 
+//for udacity course on SDN
+
+Clone the project starter code from Github into the Mininet virtual machine git clone https://github.com/OMS6250/gt-cs6250.git
+
+Update the repository locations by issuing the following command (be sure to copy and paste exactly):
+
+sudo sed -i "s/security.ubuntu.com/old-releases.ubuntu.com/g" /etc/apt/sources.list
+sudo sed -i "s/mirrors.kernel.org/old-releases.ubuntu.com/g" /etc/apt/sources.list
+sudo apt-get update
+From here, issue the following command to get apt-get working again: sudo apt-get update
+
+Install two libraries necessary to run the measurement code sudo apt-get install bwm-ng python-matplotlib.
+
+//for using pyretic
+git clone git://github.com/frenetic-lang/pyretic.git in ~
+sudo apt-get install python-all python-all-dev python-all-dbg python-dev python-netaddr
+sudo easy_install ipaddr netaddr bitarray networkx yappi pytest ipdb sphinx pyparsing==1.5.7 
+ $ sudo gem install jekyll
+ in $ .profile 
+export PATH=$PATH:$HOME/pyretic:$HOME/pox   
+ export PYTHONPATH=$HOME/pyretic:$HOME/mininet:$HOME/pox
+
+
+
+did 
+sudo sed -i "s/old-releases.ubuntu.com/security.ubuntu.com/g" /etc/apt/sources.list
+sudo sed -i "s/old-releases.ubuntu.com/mirrors.kernel.org/g" /etc/apt/sources.list
+to repair apt-get
+
+
+//pyresonance
+in ~/pyretic/pyretic
+git clone https://github.com/Resonance-SDN/pyresonance
+
+install java
+
+download sflow in any directory
+wget http://www.inmon.com/products/sFlow-RT/sflow-rt.tar.gz
+
 
